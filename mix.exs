@@ -32,7 +32,8 @@ defmodule Scratch.Mixfile do
   end
 
   def system(target) do
-    [{:"nerves_system_#{target}", ">= 0.0.0"}]
+    [{:"nerves_system_#{target}", ">= 0.0.0"},
+    {:"nerves_toolchain", "0.6.3"},]
   end
 
   def aliases do
